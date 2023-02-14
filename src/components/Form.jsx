@@ -18,6 +18,18 @@ const Form = (props) => {
                     <label>Last Name: </label>
                     <input type="text" value={lastname} onChange={(e) => setLastName(e.target.value)}/>
                 </div>
+                <div className="form-row">
+                    <label>Email: </label>
+                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+                </div>
+                <div className="form-row">
+                    <label>Password: </label>
+                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                </div>
+                <div className="form-row">
+                    <label>Confirm Password: </label>
+                    <input type="password" value={confirmpassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+                </div>
             </form>
             <div>
                 <h2>Your Form Data</h2>
@@ -30,6 +42,18 @@ const Form = (props) => {
                         <tr>
                             <td>Last Name: </td>
                             <td>{lastname}</td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td>{email}</td>
+                        </tr>
+                        <tr>
+                            <td>Password: </td>
+                            <td>{password}</td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Password: </td>
+                            <td>{confirmpassword}</td>
                         </tr>
                     </tbody>
                 </table>
